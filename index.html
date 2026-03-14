@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DC Cultural & Policy Events</title>
+  <meta name="description" content="Aggregated events from DC think tanks, Smithsonian, Folger, Kennedy Center, embassies & cultural institutes — updated every 6 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Tokens ─────────────────────────────────────────────── */
+    :root {
+      --bg:         #f7f5f0;
+      --bg2:        #efecea;
+      --surface:    #ffffff;
+      --border:     #dedad4;
+      --text:       #1a1814;
+      --muted:      #7a7368;
+      --accent:     #c0392b;
+
+      --think:      #2563eb;   /* blue  */
+      --smith:      #d97706;   /* amber */
+      --shake:      #7c3aed;   /* violet */
+      --culture:    #16a34a;   /* green */
+      --embassy:    #db2777;   /* pink */
+
+      --radius:     4px;
+      --shadow:     0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.04);
+    }
+
+    /* ── Reset ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    header {
+      background: var(--text);
+      color: #f7f5f0;
+      padding: 2.5rem 2rem 2rem;
+    }
+
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .wordmark {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+    }
+
+    .wordmark em {
+      font-style: italic;
+      color: #e8cfc7;
+    }
+
+    .tagline {
+      font-family: 'DM Mono', monospace;
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #9e9589;
+      margin-top: .5rem;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .55rem 1.1rem;
+      border: 1px solid rgba(255,255,255,.2);
+      background: transparent;
+      color: #f7f5f0;
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem;
+      letter-spacing: .06em;
+      cursor: pointer;
+      transition: background .15s, border-color .15s;
+      border-radius: var(--radius);
+    }
+
+    .btn:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.4); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); }
+    .btn.primary:hover { background: #a93226; border-color: #a93226; }
+
+    /* ── Source strip ───────────────────────────────────────── */
+    .sources-strip {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 2rem;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .sources-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      gap: .4rem;
+      align-items: center;
+    }
+
+    .src-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: .5rem;
+      flex-shrink: 0;
+    }
+
+    .src-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      padding: .2rem .65rem;
+      border-radius: 20px;
+      font-size: .7rem;
+      font-weight: 500;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      cursor: default;
+      flex-shrink: 0;
+    }
+
+    .src-badge .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Controls ───────────────────────────────────────────── */
+    .controls {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+
+    .controls-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: .75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: .5rem .75rem .5rem 2.25rem;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem;
+      color: var(--text);
+      border-radius: var(--radius);
+      outline: none;
+      transition: border-color .15s;
+    }
+
+    .search-input:focus { border-color: var(--accent); }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+    }
+
+    .filter-btn {
+      padding: .35rem .8rem;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .15s;
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+    }
+
+    .filter-btn.active {
+      color: var(--surface);
+    }
+
+    .filter-btn[data-cat="all"].active        { background: var(--text); border-color: var(--text); }
+    .filter-btn[data-cat="Think Tanks"].active { background: var(--think); border-color: var(--think); }
+    .filter-btn[data-cat="Smithsonian"].active { background: var(--smith); border-color: var(--smith); }
+    .filter-btn[data-cat="Shakespeare"].active { background: var(--shake); border-color: var(--shake); }
+    .filter-btn[data-cat="Cultural Centers"].active { background: var(--culture); border-color: var(--culture); }
+    .filter-btn[data-cat="Embassies"].active  { background: var(--embassy); border-color: var(--embassy); }
+
+    .count-badge {
+      background: rgba(255,255,255,.25);
+      border-radius: 10px;
+      padding: 0 5px;
+      font-size: .65rem;
+      font-weight: 600;
+      min-width: 18px;
+      text-align: center;
+    }
+
+    .total-count {
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem;
+      color: var(--muted);
+      margin-left: auto;
+      white-space: nowrap;
+    }
+
+    /* ── View toggles ───────────────────────────────────────── */
+    .view-toggle {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .view-btn {
+      padding: .4rem .65rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      transition: background .15s, color .15s;
+    }
+
+    .view-btn.active {
+      background: var(--text);
+      color: #f7f5f0;
+    }
+
+    /* ── Main layout ────────────────────────────────────────── */
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* ── Grid view ──────────────────────────────────────────── */
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .event-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: box-shadow .2s, transform .15s;
+    }
+
+    .event-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,.12);
+      transform: translateY(-2px);
+    }
+
+    .event-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px; height: 100%;
+    }
+
+    .card-think::before   { background: var(--think); }
+    .card-smith::before   { background: var(--smith); }
+    .card-shake::before   { background: var(--shake); }
+    .card-culture::before { background: var(--culture); }
+    .card-embassy::before { background: var(--embassy); }
+
+    .card-source {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .card-think   .card-source { color: var(--think); }
+    .card-smith   .card-source { color: var(--smith); }
+    .card-shake   .card-source { color: var(--shake); }
+    .card-culture .card-source { color: var(--culture); }
+    .card-embassy .card-source { color: var(--embassy); }
+
+    .card-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .card-title a:hover { color: var(--accent); }
+
+    .card-meta {
+      display: flex;
+      flex-direction: column;
+      gap: .2rem;
+      font-size: .78rem;
+      color: var(--muted);
+    }
+
+    .card-date {
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem;
+      font-weight: 500;
+    }
+
+    .card-desc {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.55;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: .5rem;
+      border-top: 1px solid var(--bg2);
+    }
+
+    .card-link {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color .15s;
+    }
+
+    .card-link:hover { color: var(--accent); }
+
+    /* ── List view ──────────────────────────────────────────── */
+    .events-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      overflow: hidden;
+    }
+
+    .list-row {
+      display: grid;
+      grid-template-columns: 140px 2fr 1fr auto;
+      gap: 1rem;
+      padding: .9rem 1.25rem;
+      border-bottom: 1px solid var(--bg2);
+      align-items: center;
+      transition: background .12s;
+    }
+
+    .list-row:last-child { border-bottom: none; }
+    .list-row:hover { background: var(--bg); }
+
+    .list-date {
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem;
+      color: var(--muted);
+    }
+
+    .list-title {
+      font-weight: 500;
+      font-size: .88rem;
+    }
+
+    .list-title a:hover { color: var(--accent); }
+
+    .list-source {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .list-pill {
+      padding: .15rem .5rem;
+      border-radius: 10px;
+      font-size: .65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      white-space: nowrap;
+    }
+
+    .pill-think   { background: #dbeafe; color: var(--think); }
+    .pill-smith   { background: #fef3c7; color: var(--smith); }
+    .pill-shake   { background: #ede9fe; color: var(--shake); }
+    .pill-culture { background: #dcfce7; color: var(--culture); }
+    .pill-embassy { background: #fce7f3; color: var(--embassy); }
+
+    /* ── Calendar view ──────────────────────────────────────── */
+    .cal-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .cal-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cal-nav-btn {
+      width: 32px; height: 32px;
+      border: 1px solid var(--border);
+      background: transparent;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 1rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .12s;
+    }
+
+    .cal-nav-btn:hover { background: var(--bg); }
+
+    .cal-month-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+    }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .cal-dow {
+      padding: .5rem;
+      text-align: center;
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cal-day {
+      min-height: 90px;
+      padding: .4rem .5rem;
+      border-right: 1px solid var(--bg2);
+      border-bottom: 1px solid var(--bg2);
+      vertical-align: top;
+    }
+
+    .cal-day:nth-child(7n) { border-right: none; }
+
+    .cal-day.other-month .cal-day-num { color: #ccc; }
+
+    .cal-day.today { background: #fff8f7; }
+
+    .cal-day-num {
+      font-family: 'DM Mono', monospace;
+      font-size: .75rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin-bottom: .3rem;
+    }
+
+    .cal-day.today .cal-day-num {
+      background: var(--accent);
+      color: #fff;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cal-event-dot {
+      font-size: .68rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: .1rem .3rem;
+      border-radius: 2px;
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+
+    .dot-think   { background: #dbeafe; color: var(--think); }
+    .dot-smith   { background: #fef3c7; color: var(--smith); }
+    .dot-shake   { background: #ede9fe; color: var(--shake); }
+    .dot-culture { background: #dcfce7; color: var(--culture); }
+    .dot-embassy { background: #fce7f3; color: var(--embassy); }
+
+    .cal-more {
+      font-size: .65rem;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    /* ── Empty / loading ────────────────────────────────────── */
+    .state-box {
+      padding: 4rem 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-family: 'DM Mono', monospace;
+      font-size: .8rem;
+      grid-column: 1/-1;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 18px; height: 18px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      vertical-align: middle;
+      margin-right: .5rem;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Footer ─────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+    .ical-tip {
+      max-width: 1280px;
+      margin: 0 auto 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: .9rem 1.25rem;
+      font-size: .82rem;
+      color: var(--muted);
+      border-radius: var(--radius);
+    }
+
+    .ical-tip strong {
+      font-family: 'DM Mono', monospace;
+      font-size: .7rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: .25rem;
+    }
+
+    .ical-tip code {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      padding: .1rem .4rem;
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem;
+      color: var(--text);
+    }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .list-row { grid-template-columns: 1fr; gap: .2rem; }
+      .list-date { order: 1; }
+      .list-title { order: 2; font-size: .95rem; }
+      .list-source { order: 3; }
+      .list-pill { order: 0; }
+      main { padding: 1rem; }
+      .cal-grid { font-size: .7rem; }
+      .cal-day { min-height: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────────── -->
+<header>
+  <div class="header-inner">
+    <div>
+      <h1 class="wordmark">DC <em>Cultural</em> &amp; Policy Events</h1>
+      <p class="tagline">Think Tanks · Smithsonian · Folger · Kennedy Center · Embassies &amp; More — Updated Every 6 Hours</p>
+    </div>
+    <div class="header-actions">
+      <a class="btn primary" href="events.ics" download>↓ Subscribe (.ics)</a>
+      <button class="btn" onclick="copyIcalUrl()">⧉ Copy iCal URL</button>
+    </div>
+  </div>
+</header>
+
+<!-- ── Source badges ──────────────────────────────────────────────────── -->
+<div class="sources-strip">
+  <div class="sources-inner">
+    <span class="src-label">Sources</span>
+    <span class="src-badge"><span class="dot" style="background:var(--think)"></span>Brookings</span>
+    <span class="src-badge"><span class="dot" style="background:var(--think)"></span>CATO</span>
+    <span class="src-badge"><span class="dot" style="background:var(--think)"></span>Heritage</span>
+    <span class="src-badge"><span class="dot" style="background:var(--think)"></span>CFR</span>
+    <span class="src-badge"><span class="dot" style="background:var(--smith)"></span>Smithsonian</span>
+    <span class="src-badge"><span class="dot" style="background:var(--shake)"></span>Folger</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Kennedy Center</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Nat'l Gallery</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Library of Congress</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Alliance Française</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Mexican Cultural Inst.</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Italian Cultural Inst.</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Korean Cultural Ctr.</span>
+    <span class="src-badge"><span class="dot" style="background:var(--culture)"></span>Goethe-Institut</span>
+    <span class="src-badge"><span class="dot" style="background:var(--embassy)"></span>Embassies (Eventbrite)</span>
+    <span class="src-badge"><span class="dot" style="background:var(--embassy)"></span>Passport DC</span>
+  </div>
+</div>
+
+<!-- ── Controls ───────────────────────────────────────────────────────── -->
+<div class="controls">
+  <div class="controls-inner">
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input class="search-input" type="search" id="search" placeholder="Search events, sources…" />
+    </div>
+
+    <div class="filter-group" id="filters">
+      <button class="filter-btn active" data-cat="all">
+        All <span class="count-badge" id="cnt-all">—</span>
+      </button>
+      <button class="filter-btn" data-cat="Think Tanks">
+        Think Tanks <span class="count-badge" id="cnt-think">—</span>
+      </button>
+      <button class="filter-btn" data-cat="Smithsonian">
+        Smithsonian <span class="count-badge" id="cnt-smith">—</span>
+      </button>
+      <button class="filter-btn" data-cat="Shakespeare">
+        Folger <span class="count-badge" id="cnt-shake">—</span>
+      </button>
+      <button class="filter-btn" data-cat="Cultural Centers">
+        Cultural Ctrs <span class="count-badge" id="cnt-culture">—</span>
+      </button>
+      <button class="filter-btn" data-cat="Embassies">
+        Embassies <span class="count-badge" id="cnt-embassy">—</span>
+      </button>
+    </div>
+
+    <span class="total-count" id="total-count"></span>
+
+    <div class="view-toggle">
+      <button class="view-btn active" id="btn-grid" title="Grid view" onclick="setView('grid')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </button>
+      <button class="view-btn" id="btn-list" title="List view" onclick="setView('list')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <button class="view-btn" id="btn-cal" title="Calendar view" onclick="setView('cal')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Main content ────────────────────────────────────────────────────── -->
+<main>
+  <div class="ical-tip" id="ical-tip">
+    <strong>Subscribe via iCal</strong>
+    Copy the URL below and paste it into any calendar app (Google Calendar → "Other calendars" → "From URL", Apple Calendar → File → New Calendar Subscription, Outlook → Add Calendar → From Internet):
+    <code id="ical-url">https://YOUR-USERNAME.github.io/YOUR-REPO/events.ics</code>
+  </div>
+
+  <div id="view-grid">
+    <div class="events-grid" id="grid-container">
+      <div class="state-box"><span class="spinner"></span>Loading events…</div>
+    </div>
+  </div>
+
+  <div id="view-list" style="display:none">
+    <div class="events-list" id="list-container">
+      <div class="state-box"><span class="spinner"></span>Loading events…</div>
+    </div>
+  </div>
+
+  <div id="view-cal" style="display:none">
+    <div class="cal-wrap">
+      <div class="cal-nav">
+        <button class="cal-nav-btn" onclick="calNav(-1)">‹</button>
+        <span class="cal-month-title" id="cal-title"></span>
+        <button class="cal-nav-btn" onclick="calNav(1)">›</button>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>Auto-updated every 6 hours via GitHub Actions · Data from 16 DC institutions</span>
+    <span id="last-updated"></span>
+  </div>
+</footer>
+
+<script>
+/* ── State ────────────────────────────────────────────────────────────── */
+let ALL = [];          // raw events array
+let filtered = [];     // after filter + search
+let activeFilter = 'all';
+let activeView = 'grid';
+let calYear, calMonth;
+
+const CAT_CLASS = {
+  'Think Tanks':      'think',
+  'Smithsonian':      'smith',
+  'Shakespeare':      'shake',
+  'Cultural Centers': 'culture',
+  'Embassies':        'embassy',
+};
+
+const MONTHS = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+const DAYS   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+/* ── Utilities ───────────────────────────────────────────────────────── */
+const $ = id => document.getElementById(id);
+const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+function fmt(iso) {
+  if (!iso) return '<span style="color:#bbb">Date TBD</span>';
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('en-US', {
+      weekday:'short', month:'short', day:'numeric', year:'numeric',
+      hour:'2-digit', minute:'2-digit', timeZone:'America/New_York'
+    });
+  } catch { return iso; }
+}
+
+function fmtShort(iso) {
+  if (!iso) return '—';
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('en-US', { month:'short', day:'numeric', timeZone:'America/New_York' });
+  } catch { return '—'; }
+}
+
+function copyIcalUrl() {
+  const url = $('ical-url').textContent;
+  navigator.clipboard.writeText(url).then(() => alert('iCal URL copied!')).catch(() => {});
+}
+
+/* ── Counts ──────────────────────────────────────────────────────────── */
+function updateCounts() {
+  const q = $('search').value.trim().toLowerCase();
+
+  const applySearch = arr => q
+    ? arr.filter(e => (e.title+' '+e.source+' '+e.description+' '+e.location).toLowerCase().includes(q))
+    : arr;
+
+  const total = applySearch(ALL);
+  $('cnt-all').textContent = total.length;
+
+  ['Think Tanks','Smithsonian','Shakespeare','Cultural Centers','Embassies'].forEach(cat => {
+    const key = 'cnt-' + CAT_CLASS[cat];
+    $( key ).textContent = applySearch(ALL.filter(e => e.category === cat)).length;
+  });
+}
+
+/* ── Filter / render ─────────────────────────────────────────────────── */
+function apply() {
+  const q = $('search').value.trim().toLowerCase();
+  filtered = ALL
+    .filter(e => activeFilter === 'all' || e.category === activeFilter)
+    .filter(e => !q || (e.title+' '+e.source+' '+e.description+' '+e.location).toLowerCase().includes(q));
+
+  $('total-count').textContent = filtered.length + ' event' + (filtered.length !== 1 ? 's' : '');
+  updateCounts();
+
+  if (activeView === 'grid')    renderGrid();
+  else if (activeView === 'list') renderList();
+  else                           renderCal();
+}
+
+/* ── Grid ─────────────────────────────────────────────────────────────── */
+function renderGrid() {
+  const c = $('grid-container');
+  if (!filtered.length) { c.innerHTML = '<div class="state-box">No events match your filter.</div>'; return; }
+  c.innerHTML = filtered.map(ev => {
+    const cls = CAT_CLASS[ev.category] || 'think';
+    return `
+    <div class="event-card card-${cls}">
+      <div class="card-source">${esc(ev.source)}</div>
+      <div class="card-title"><a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a></div>
+      <div class="card-meta">
+        <span class="card-date">${fmt(ev.start)}</span>
+        ${ev.location ? `<span>📍 ${esc(ev.location)}</span>` : ''}
+      </div>
+      ${ev.description ? `<div class="card-desc">${esc(ev.description)}</div>` : ''}
+      <div class="card-footer">
+        <a class="card-link" href="${esc(ev.url)}" target="_blank" rel="noopener">View event →</a>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* ── List ─────────────────────────────────────────────────────────────── */
+function renderList() {
+  const c = $('list-container');
+  if (!filtered.length) { c.innerHTML = '<div class="state-box">No events match your filter.</div>'; return; }
+  c.innerHTML = filtered.map(ev => {
+    const cls = CAT_CLASS[ev.category] || 'think';
+    return `
+    <div class="list-row">
+      <div class="list-date">${fmtShort(ev.start)}</div>
+      <div class="list-title"><a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a></div>
+      <div class="list-source">${esc(ev.source)}</div>
+      <span class="list-pill pill-${cls}">${esc(ev.category)}</span>
+    </div>`;
+  }).join('');
+}
+
+/* ── Calendar ─────────────────────────────────────────────────────────── */
+function renderCal() {
+  $('cal-title').textContent = MONTHS[calMonth] + ' ' + calYear;
+  const grid = $('cal-grid');
+
+  // Day-of-week headers
+  let html = DAYS.map(d => `<div class="cal-dow">${d}</div>`).join('');
+
+  // Build date→events map from filtered events that have a start date
+  const dayMap = {};
+  filtered.forEach(ev => {
+    if (!ev.start) return;
+    try {
+      const d = new Date(ev.start);
+      if (d.getFullYear() === calYear && d.getMonth() === calMonth) {
+        const k = d.getDate();
+        (dayMap[k] = dayMap[k] || []).push(ev);
+      }
+    } catch {}
+  });
+
+  const firstDay = new Date(calYear, calMonth, 1).getDay();
+  const daysInMonth = new Date(calYear, calMonth+1, 0).getDate();
+  const daysInPrev  = new Date(calYear, calMonth, 0).getDate();
+  const today = new Date();
+
+  let day = 1, nextDay = 1;
+  const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
+
+  for (let i = 0; i < totalCells; i++) {
+    let num, isOther = false;
+    if (i < firstDay) { num = daysInPrev - firstDay + i + 1; isOther = true; }
+    else if (day > daysInMonth) { num = nextDay++; isOther = true; }
+    else { num = day++; }
+
+    const isToday = !isOther && num === today.getDate()
+      && calMonth === today.getMonth() && calYear === today.getFullYear();
+
+    const eventsHere = isOther ? [] : (dayMap[num] || []);
+    const MAX_SHOW = 3;
+    const dots = eventsHere.slice(0, MAX_SHOW).map(ev => {
+      const cls = CAT_CLASS[ev.category] || 'think';
+      return `<div class="cal-event-dot dot-${cls}" title="${esc(ev.title)}" onclick="window.open('${esc(ev.url)}','_blank')">${esc(ev.title)}</div>`;
+    }).join('');
+    const more = eventsHere.length > MAX_SHOW
+      ? `<div class="cal-more">+${eventsHere.length - MAX_SHOW} more</div>` : '';
+
+    const numHtml = isToday
+      ? `<div class="cal-day-num">${num}</div>`
+      : `<div class="cal-day-num" style="color:${isOther?'#ccc':'var(--muted)'}">${num}</div>`;
+
+    html += `<div class="cal-day${isOther?' other-month':''}${isToday?' today':''}">${numHtml}${dots}${more}</div>`;
+  }
+
+  grid.innerHTML = html;
+}
+
+function calNav(dir) {
+  calMonth += dir;
+  if (calMonth < 0)  { calMonth = 11; calYear--; }
+  if (calMonth > 11) { calMonth = 0;  calYear++; }
+  renderCal();
+}
+
+/* ── View switching ──────────────────────────────────────────────────── */
+function setView(v) {
+  activeView = v;
+  ['grid','list','cal'].forEach(name => {
+    $('view-' + name).style.display = name === v ? '' : 'none';
+    $('btn-' + name).classList.toggle('active', name === v);
+  });
+  apply();
+}
+
+/* ── Filter buttons ──────────────────────────────────────────────────── */
+$('filters').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  activeFilter = btn.dataset.cat;
+  apply();
+});
+
+$('search').addEventListener('input', apply);
+
+/* ── Boot ─────────────────────────────────────────────────────────────── */
+const now = new Date();
+calYear  = now.getFullYear();
+calMonth = now.getMonth();
+
+// Set iCal URL dynamically
+const pageUrl = location.href.replace(/\/?$/, '/').replace(/index\.html\/?$/, '');
+$('ical-url').textContent = pageUrl + 'events.ics';
+
+fetch('events.json')
+  .then(r => r.json())
+  .then(data => {
+    ALL = data.events || data;
+    if (data.updated) {
+      $('last-updated').textContent = 'Last updated: ' +
+        new Date(data.updated).toLocaleString('en-US', { timeZone: 'America/New_York' });
+    }
+    apply();
+  })
+  .catch(() => {
+    $('grid-container').innerHTML =
+      '<div class="state-box">⚠ Could not load events.json — run the scraper first, then push to GitHub.</div>';
+  });
+</script>
+</body>
+</html>
