@@ -10,8 +10,8 @@ X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Saturday March 14\, 2026
 DTSTART;TZID=EDT:20260314T000000
-DTSTAMP:20260314T223854Z
-UID:d3aed9bf-8c15-4289-b54a-a016bb46d79e@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:a79b6179-df5d-4525-a852-74de924d38fb@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:Source: Library of Congress\n\nCategory: Cultural Centers\n\nL
  ink: https://www.loc.gov/item/event-420288/family-day-mapping-a-new-nation
@@ -22,8 +22,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Brookings Institution] USMCA Forward 2026 launch
 DTSTART;TZID=EDT:20260314T042026
-DTSTAMP:20260314T223854Z
-UID:c8a55dca-fc0d-4c2e-8dab-d006e9460d5f@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:202710dd-8ab0-4732-bc13-2a5bad0d42e0@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/usmca-forward-2026-launch/
@@ -33,8 +33,8 @@ BEGIN:VEVENT
 SUMMARY:[Brookings Institution] AI + work: Understanding AI’s impact on 
  the labor market
 DTSTART;TZID=EDT:20260314T102026
-DTSTAMP:20260314T223854Z
-UID:1a87a620-476c-4d7c-ab28-2f27024d1acb@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:a548769a-d036-442f-8cbe-4938ff016515@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.hamiltonproject.org/event/understanding-ais-impact-o
@@ -46,8 +46,8 @@ BEGIN:VEVENT
 SUMMARY:[Brookings Institution] AI\, workers\, and national security in a 
  changing world: A conversation with Sen. Mark Kelly
 DTSTART;TZID=EDT:20260314T112026
-DTSTAMP:20260314T223854Z
-UID:7ac163ba-deeb-4783-8312-5f74c47b5980@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:6bb3f4f1-940b-40fd-b2d7-ed7a47f419ef@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/ai-workers-national-security-se
@@ -59,8 +59,8 @@ BEGIN:VEVENT
 SUMMARY:[Brookings Institution] From evidence to action: How cities are in
  vesting in playful learning landscapes
 DTSTART;TZID=EDT:20260314T122026
-DTSTAMP:20260314T223854Z
-UID:260255e1-d0c3-456f-a23c-2e25e59e60e8@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:015c35af-9739-4c7e-a6be-5081b9bd5b66@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/from-evidence-to-action-how-cit
@@ -71,8 +71,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Brookings Institution] Turkey in a Middle East at war
 DTSTART;TZID=EDT:20260314T162026
-DTSTAMP:20260314T223854Z
-UID:ad0b322b-69d6-4e28-95ec-610c1cdd0116@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:e7f67faf-b078-4e28-8bfc-50eb36909dac@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/turkey-in-a-middle-east-at-war/
@@ -82,8 +82,8 @@ BEGIN:VEVENT
 SUMMARY:[Brookings Institution] Reimagining homeowners insurance amid grow
  ing climate risk
 DTSTART;TZID=EDT:20260314T182026
-DTSTAMP:20260314T223854Z
-UID:9acb126e-e4f5-41cb-9c31-941af5dae4a6@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:1119786f-46ef-49bd-a26e-126b436d846f@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.hamiltonproject.org/event/reimagining-homeowners-ins
@@ -95,8 +95,8 @@ BEGIN:VEVENT
 SUMMARY:[Brookings Institution] Rise up economics: Why local Black busines
  s growth is powering national trends
 DTSTART;TZID=EDT:20260314T182026
-DTSTAMP:20260314T223854Z
-UID:f7bac426-88f1-4911-82bc-1b674744864c@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:9911b049-a911-47e3-ae11-5d5d5d652cbe@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/rise-up-economics-why-local-bla
@@ -107,8 +107,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Brookings Institution] Ukraine on the mental map of Europe
 DTSTART;TZID=EDT:20260314T192026
-DTSTAMP:20260314T223854Z
-UID:bbef00a0-0ee7-4ae7-b332-19e5f96354c6@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:4f6b4fe4-e237-4da0-968a-1099bb1914d3@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/ukraine-on-the-mental-map-of-eu
@@ -119,8 +119,8 @@ BEGIN:VEVENT
 SUMMARY:[Brookings Institution] The future of the federal student loan pro
  gram after OBBBA
 DTSTART;TZID=EDT:20260314T192026
-DTSTAMP:20260314T223854Z
-UID:a5725bf8-1c80-4863-a7db-a2a6a7138c37@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:f57d553b-b5b4-4e07-98f7-bf39ff5556d4@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/the-future-of-the-federal-stude
@@ -132,8 +132,8 @@ BEGIN:VEVENT
 SUMMARY:[Brookings Institution] Cross-strait crossroads: Pathways for Amer
  ica’s Taiwan policy
 DTSTART;TZID=EDT:20260314T232026
-DTSTAMP:20260314T223854Z
-UID:f53496df-9db6-44d9-b5e8-2a35e5df0da1@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:fdd2470a-fbd1-4194-a069-d0140fb76391@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/cross-strait-crossroads-pathway
@@ -144,8 +144,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Brookings Institution] What to expect this tax season
 DTSTART;TZID=EDT:20260314T232026
-DTSTAMP:20260314T223854Z
-UID:f2c2ff51-81fb-448f-823d-4725d0743925@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:bb86be5a-4cae-4137-b906-2cc6a4cf4521@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/what-to-expect-this-tax-season/
@@ -154,8 +154,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Heritage Foundation] Secondary Navigation
 DTSTART;TZID=EDT:20260318T000000
-DTSTAMP:20260314T223854Z
-UID:823ac724-fb06-48df-baca-f65f05587431@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:cb3c356b-9299-45bb-8401-6164fec97b98@dc-events-calendar
 CATEGORIES:Think Tanks,Heritage Foundation
 DESCRIPTION:Frequently Searched\n\nSource: Heritage Foundation\n\nCategory
  : Think Tanks\n\nLink: https://www.heritage.org/events#main-content
@@ -165,8 +165,8 @@ BEGIN:VEVENT
 SUMMARY:[Heritage Foundation] Conservative Women on Work\, Family\, and Pu
  blic Policy
 DTSTART;TZID=EDT:20260318T000000
-DTSTAMP:20260314T223854Z
-UID:5243a057-8536-4273-b257-d79a18621351@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:af83975d-5b5b-4c9b-a660-3efb602ae2d6@dc-events-calendar
 CATEGORIES:Think Tanks,Heritage Foundation
 DESCRIPTION:Source: Heritage Foundation\n\nCategory: Think Tanks\n\nLink: 
  https://www.heritage.org/conservatism/event/conservative-women-work-family
@@ -177,8 +177,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[CATO Institute] Cato on Tour: Austin
 DTSTART:20260325T120000
-DTSTAMP:20260314T223854Z
-UID:c8016b7d-c4fc-4b2d-acf3-4abf4556fd1a@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:f8a5f083-0b02-4aed-92d5-af56d4d4a693@dc-events-calendar
 CATEGORIES:Think Tanks,CATO Institute
 DESCRIPTION:Please feel free to contact Serena Home atshome@​cato.​org
  with any questions.\n\nSource: CATO Institute\n\nCategory: Think Tanks\n\n
@@ -188,8 +188,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[CATO Institute] The Mattering Instinct:
 DTSTART:20260325T120000
-DTSTAMP:20260314T223854Z
-UID:4501b545-379b-4193-9243-e173a1911b7c@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:fd859b63-db63-40c2-8bda-189f97e1a82e@dc-events-calendar
 CATEGORIES:Think Tanks,CATO Institute
 DESCRIPTION:MacArthur Fellow and National Humanities Medalist Rebecca Newb
  erger Goldstein joins us to discuss her latest book\,The Mattering Instinc
@@ -201,8 +201,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Brookings Institution] US strategy in a turbulent world
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:8ccaf75a-b597-4e59-8e67-764e955d1c72@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:bd8dd59c-f4f3-42d3-93c8-9bc364607998@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/us-strategy-in-a-turbulent-worl
@@ -212,8 +212,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Brookings Institution] Uprooted: Rediscovering American history
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:25b2cb0a-6052-4bc8-8441-3a0a05f5ad85@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:258f331d-1a64-4a8e-af8e-d724f44e206f@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/uprooted-rediscovering-american
@@ -224,8 +224,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Brookings Institution] BPEA Spring 2026 Conference
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:19bd26f1-590a-4c8f-8cb4-6507e8df81c7@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:8aeaf6b8-87ef-4442-9790-c36a8c554893@dc-events-calendar
 CATEGORIES:Think Tanks,Brookings Institution
 DESCRIPTION:2026\n\nSource: Brookings Institution\n\nCategory: Think Tanks
  \n\nLink: https://www.brookings.edu/events/bpea-spring-2026-conference/
@@ -235,8 +235,8 @@ BEGIN:VEVENT
 SUMMARY:[CATO Institute] Basel III and Bank Capital Rules: A Conversation 
  with Vice Chair for Supervision Michelle W. Bowman
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:730198f9-2b1b-4f8c-b9a9-e208ce71560a@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:f9a8a3c7-9a75-40a6-9d22-0c03b0fae06d@dc-events-calendar
 CATEGORIES:Think Tanks,CATO Institute
 DESCRIPTION:Join Vice Chair for Supervision Bowman at the Cato Institute a
  s she details her comprehensive review and what is next for bank capital r
@@ -249,8 +249,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[CATO Institute] Cato Next Gen Reception
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:62a63b7b-c7a0-4c86-b3a7-e68661941725@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:5cf632ad-0508-4a99-9f30-91d408a9b3c4@dc-events-calendar
 CATEGORIES:Think Tanks,CATO Institute
 DESCRIPTION:Let’s be honest: Health care in America is a mess. It’s co
  nfusing and expensive\, and there are massive gaps—and\, despite what ma
@@ -263,8 +263,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[CATO Institute] Trump’s Iran Gamble
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:825f0f07-3941-44c8-bf0c-ace8cf19bab3@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:f2d3b2b5-c1e1-49ef-85c8-b6584ee792b1@dc-events-calendar
 CATEGORIES:Think Tanks,CATO Institute
 DESCRIPTION:President Trump has launched a war with Iran\, leaving the Ame
  rican public with more questions than answers.\n\nSource: CATO Institute\n
@@ -275,8 +275,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Heritage Foundation] The Honorable Mary Miller (IL-15)
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:6c65e248-c3e0-4f67-b0dc-71b1cdbd7e95@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:b6af2d0c-8ec0-40c2-be2b-c5a7335bd40a@dc-events-calendar
 CATEGORIES:Think Tanks,Heritage Foundation
 DESCRIPTION:Source: Heritage Foundation\n\nCategory: Think Tanks\n\nLink: 
  https://www.heritage.org/events
@@ -285,8 +285,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] What's on
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:2ecc333e-5af9-45af-9cf3-cb8b09ff6c42@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:55d96baf-f579-4a48-af13-34ea85004774@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:There’s something for everyone. From award-winning theater a
  nd music\, to poetry and exhibitions\, experience the power of the arts wi
@@ -297,8 +297,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] Visit
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:0c78d68e-3bab-454d-8b05-b02c21f06dd7@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:9ad3efcf-84ad-4ec7-a661-227af4961c14@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:The Folger is open! Learn about what's new and plan your visit
  .\n\nSource: Folger Shakespeare Library\n\nCategory: Shakespeare\n\nLink: 
@@ -308,8 +308,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] Explore
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:e0a0e4c8-7a92-4202-a7c1-743e938b198a@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:801759e3-0790-4a89-a6d1-7f885073b05a@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:Discover Shakespeare’s stories and the world that shaped the
  m. Deepen your understanding of his works and their cultural influence.\n\
@@ -320,8 +320,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] Teach
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:2910fda0-9ce9-47ec-b4cf-18278f119c35@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:273413ca-d307-46dc-8b02-06b373cabb5e@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:Bring Shakespeare’s work to life in the classroom. Find teac
  hing resources and opportunities.\n\nSource: Folger Shakespeare Library\n\
@@ -331,8 +331,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] Research
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:a277c626-d994-48f3-b69a-3a6b877120ee@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:d42ddc87-3aee-4014-9d1b-f75c097f7823@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:Dive deep into the world’s largest Shakespeare collection an
  d access primary sources from the early modern period.\n\nSource: Folger S
@@ -343,8 +343,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] Join and Support
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:0a524228-fd6b-4b7f-9b75-b4d49ad797f2@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:b937a2f5-276d-469c-921b-a4486b4a8821@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:Support us to bring Shakespeare and his world to life for ever
  yone.\n\nSource: Folger Shakespeare Library\n\nCategory: Shakespeare\n\nLi
@@ -354,8 +354,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] Shakespeare’sAs You Like It
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:00459cd4-51d2-4b3a-b4d4-f1ebfd781ead@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:78823e34-eeee-4dd8-b079-6121145b52df@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:See the play at Folger Theatre and hear a talk from the Folger
   Director.\n\nSource: Folger Shakespeare Library\n\nCategory: Shakespeare\
@@ -365,8 +365,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] As You Like It
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:86c628e7-67f7-4452-8035-764f4d0c2da5@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:1ee7f022-4e97-44d5-a8dc-7151c55b384a@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:Source: Folger Shakespeare Library\n\nCategory: Shakespeare\n\
  nLink: https://www.folger.edu/whats-on/as-you-like-it/
@@ -375,8 +375,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Folger Shakespeare Library] Website navigation
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:86f49823-a32d-427c-8054-f4d7c0588576@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:0a7380bf-2fb4-4877-bd7a-21f2ce975261@dc-events-calendar
 CATEGORIES:Shakespeare,Folger Shakespeare Library
 DESCRIPTION:There’s something for everyone. From award-winning theater a
  nd music\, to poetry and exhibitions\, experience the power of the arts wi
@@ -387,8 +387,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Browse by:
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:c9c080ae-8a89-4824-82df-b8e50ee9a35e@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:223b60b7-6cba-4fb9-9831-405324dada51@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:Top of page\n\nSource: Library of Congress\n\nCategory: Cultur
  al Centers\n\nLink: https://www.loc.gov/events/#page-title
@@ -397,8 +397,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Family Day: Mapping a New Nation
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:b1076579-6f97-4174-a731-1ce469cdfbba@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:77f9942c-cd37-4736-b891-ed5d439cfd0f@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:Source: Library of Congress\n\nCategory: Cultural Centers\n\nL
  ink: https://www.loc.gov/item/event-420288/family-day-mapping-a-new-nation
@@ -410,8 +410,8 @@ BEGIN:VEVENT
 SUMMARY:[Library of Congress] The Two Georges: Parallel Lives in an Age of
   Revolution
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:2c12dc19-2823-41e0-a192-decab225d27d@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:030e0de0-d898-47a5-8e10-bac3c007c301@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:Our understanding of George Washington and King George III of 
  Britain is clouded by myths that have accumulated over centuries. This exh
@@ -428,8 +428,8 @@ BEGIN:VEVENT
 SUMMARY:[Library of Congress] Treasures from the Stephen Sondheim Collecti
  on
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:b889c952-ca61-43f0-a10c-ac3ac0702e59@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:dfe9327b-70a3-452b-aff1-bbfccf3f5290@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:In 2025\, the Library of Congress acquired the papers of Steph
  en Sondheim\, one of the most celebrated figures in twentieth-century musi
@@ -445,8 +445,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Ojibwe Poet Jane Johnston Schoolcraft
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:62592c1f-981e-4013-9eaa-29983dc5d1ca@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:49788e52-5815-4192-b212-e9e64009e46e@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:In celebration of Women’s History Month in March and Nationa
  l Poetry Month in April\, the Library of Congress presents a display of ma
@@ -462,8 +462,8 @@ BEGIN:VEVENT
 SUMMARY:[Library of Congress] 2026 Innovator in Residence Informational We
  binar
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:f2f9c9a9-8817-4038-ad2d-53f986395f68@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:da0918d1-cdb8-4bd9-b51e-e4de8d59cc1a@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:The Library of Congress is seeking its next Innovator in Resid
  ence! Launched in 2017\, the program invites creative thinkers to connect 
@@ -479,8 +479,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Isata Kanneh-Mason
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:07b84394-dd44-4bbb-9214-394a584d60db@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:2b6f8272-4694-4b3d-8cff-94dfb6f8c695@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:Award-winning British pianist Isata Kanneh-Mason presents a so
  lo recital at the Library of Congress\, showcasing her poetic insight\, ex
@@ -493,8 +493,8 @@ BEGIN:VEVENT
 SUMMARY:[Library of Congress] Orientation to Legal Research: U.S. Federal 
  Statutes
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:247fbe2e-5a7f-496d-9c3e-b597f882f7bd@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:56e02810-57c9-4594-a766-f01d86d7f783@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:This installment of the Orientation to Legal Research Series 
  — a monthly program taught by law reference librarians that introduces p
@@ -510,8 +510,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Live! At The Library
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:f6ed4a5c-4ab8-4942-b957-3ce472b8f27c@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:640f7dce-0bf7-4698-82eb-60dd1abb8526@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:The Library’s Thomas Jefferson Building and all exhibitions 
  will be open for extended hours on Thursdays. Visitors are invited to enjo
@@ -525,8 +525,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Live! At the Library: Who Knew? Trivia Night
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:3e2cbf69-dd2a-42d0-ab38-f4628a0cc1f4@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:eac5745a-f6d7-4013-a526-a8c079795076@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:As the U.S. approaches its 250th anniversary\, gather your fri
  ends for a themed evening of trivia spotlighting the Veterans History Pro
@@ -541,8 +541,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] Darby O'Gill and the Little People (1959)
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:eb799564-b574-4478-b4ac-e6cc0ea38b07@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:985540c9-0176-4510-be01-c792b76e50e2@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:Albert Sharpe and a young Sean Connery star in this richly ima
  ginative Irish folktale filled with leprechauns and moral bargains. Direct
@@ -557,8 +557,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Library of Congress] The Passion of Joan of Arc (1928)
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:aa1decec-2f1f-4a8b-ac74-1cfd1755b6a8@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:56d09e26-ce34-4794-855d-a91b0ef509d7@dc-events-calendar
 CATEGORIES:Cultural Centers,Library of Congress
 DESCRIPTION:Renée Jeanne Falconetti delivers one of cinema’s most rever
  ed performances in Carl Theodor Dreyer’s silent masterpiece\, selected f
@@ -571,11 +571,25 @@ URL:https://www.loc.gov/item/event-420401/the-passion-of-joan-of-arc-1928/
  2026-03-20/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Italian Cultural Institute] Pagination
+DTSTART;VALUE=DATE:20260314
+DTSTAMP:20260314T224131Z
+UID:b2ff9247-1978-4c79-af57-1e3558aa2cc2@dc-events-calendar
+CATEGORIES:Cultural Centers,Italian Cultural Institute
+DESCRIPTION:The Italian Cultural Institute of Washington invites you to ex
+ plore a curated selection of books for young readers and to take part in o
+ ur monthly series of gatherings “In biblioteca in italiano.” Kids betw
+ een 4 and 10 are warmly invited to join us and Fiorenza Castelli for a fun
+  journey through won\n\nSource: Italian Cultural Institute\n\nCategory: Cu
+ ltural Centers\n\nLink: https://iicwashington.esteri.it/en/eventi/
+URL:https://iicwashington.esteri.it/en/eventi/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Passport DC] Events DC presents its annual Passport DC in May 202
  6!
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:dcefaf83-0185-4d0e-9c37-09d9de84ecc6@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:c84dc3b7-bf8d-4aec-a0d0-5f193d853a1e@dc-events-calendar
 CATEGORIES:Embassies,Passport DC
 DESCRIPTION:Experience the world in one place by planning a trip to Washin
  gton\, DC. Passport DC offers a month-long journey that showcases the city
@@ -590,8 +604,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Passport DC] Embassy of Bolivia 2023
 DTSTART;VALUE=DATE:20260314
-DTSTAMP:20260314T223854Z
-UID:96908312-a440-4f22-9f9d-644027dc3968@dc-events-calendar
+DTSTAMP:20260314T224131Z
+UID:4bffa8ac-e171-4ebe-ba63-74b858c089bf@dc-events-calendar
 CATEGORIES:Embassies,Passport DC
 DESCRIPTION:Source: Passport DC\n\nCategory: Embassies\n\nLink: https://ev
  entsdc.com/sites/default/files/styles/webp/public/2023-06/_C6A1534.jpg.web
