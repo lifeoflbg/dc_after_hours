@@ -6,10 +6,6 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - "scraper.py"
-      - "requirements.txt"
-      - ".github/workflows/scrape.yml"
 
 permissions:
   contents: write
