@@ -1,0 +1,6 @@
+{
+  "updated": "2026-01-01T00:00:00+00:00",
+  "count": 0,
+  "note": "Run `python scraper.py` or trigger the GitHub Action to populate this file.",
+  "events": []
+}
